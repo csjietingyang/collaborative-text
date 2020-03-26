@@ -131,7 +131,7 @@ class GRCNN():
         parser = argparse.ArgumentParser()
         parser.add_argument("--img_size", default=self.train_size, type=int)
         parser.add_argument("--scale", default=self.sr_scale, type=int)
-        parser.add_argument("--tfrecord_path", default='./tfrecord/ComTex/')
+        parser.add_argument("--tfrecord_path", default='./tfrecord/Xu et al.\'s dataset/')
         parser.add_argument("--save_mode", default='train')
         parser.add_argument("--batch_size", default=self.batch_size, type=int)
         args = parser.parse_args()
@@ -210,9 +210,9 @@ class GRCNN():
     def test(self, model):
         self.mode = 'test'
 
-        test_input_path = './dataset/ComTex/TEST/INPUT/'
-        test_gt_path = './dataset/ComTex/TEST/GT/'
-        save_path = './dataset/ComTex/M0/GRCNN/'
+        test_input_path = './dataset/Xu et al.\'s dataset/TEST/INPUT/'
+        test_gt_path = './dataset/Xu et al.\'s dataset/TEST/GT/'
+        save_path = './dataset/Xu et al.\'s dataset/M0/GRCNN/'
         if not os.path.exists(save_path):
             os.mkdir(save_path)
 
@@ -278,7 +278,7 @@ if __name__ == '__main__':
     if not os.path.isdir(m_path):
         os.mkdir(m_path)
 
-    m_path = './model/ComTex/'
+    m_path = './model/Xu et al.\'s dataset/'
     if not os.path.isdir(m_path):
         os.mkdir(m_path)
 
@@ -299,7 +299,7 @@ if __name__ == '__main__':
     parser.add_argument("--train_num", default=1046368, type=int)
     parser.add_argument("--batch_size", default=32, type=int)
     parser.add_argument("--learning_rate", default=0.0001, type=float)
-    parser.add_argument("--model_path", default='./model/ComTex/GRCNN/')
+    parser.add_argument("--model_path", default='./model/Xu et al.\'s dataset/GRCNN/')
     parser.add_argument("--epochs", default=12, type=int)
     args = parser.parse_args()
 

@@ -96,9 +96,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--img_size", default=200, type=int)
     parser.add_argument("--scale", default=4, type=int)
-    parser.add_argument("--train_input_path", default='./dataset/ComTex/TRAINING/INPUT/')
-    parser.add_argument("--train_gt_path", default='./dataset/ComTex/TRAINING/GT/')
-    parser.add_argument("--tfrecord_path", default='./tfrecord/ComTex/')
+    parser.add_argument("--train_input_path", default='./dataset/Xu et al.\'s dataset/TRAINING/INPUT/')
+    parser.add_argument("--train_gt_path", default='./dataset/Xu et al.\'s dataset/TRAINING/GT/')
+    parser.add_argument("--tfrecord_path", default='./tfrecord/Xu et al.\'s dataset/')
     parser.add_argument("--save_mode", default='train')
     args = parser.parse_args()
 
