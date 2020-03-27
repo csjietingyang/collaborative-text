@@ -1,0 +1,2 @@
+model_checkpoint_path: "JointFinetune_model_weight.ckpt"
+all_model_checkpoint_paths: "JointFinetune_model_weight.ckpt"
