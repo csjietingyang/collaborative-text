@@ -394,7 +394,7 @@ if __name__ == '__main__':
     parser.add_argument("--GRCNN_out_channels", default=3, type=int)
     parser.add_argument("--train_size", default=200, type=int)
     parser.add_argument("--sr_scale", default=4, type=int)
-    parser.add_argument("--train_num", default=1046368, type=int)
+    parser.add_argument("--train_num", default=1067872, type=int)
     parser.add_argument("--batch_size", default=16, type=int)
     parser.add_argument("--learning_rate", default=0.0001, type=float)
     parser.add_argument("--model_path", default='./model/Xu et al.\'s dataset/JointFinetune/')
