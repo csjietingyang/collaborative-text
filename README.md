@@ -1,7 +1,7 @@
-# Being updated
+# Collaborative Deep Learning for Super-Resolving Blurry Text Images
 
 ## paper
-The tensorflow implementation of our accepted peper.
+The tensorflow implementation of our peper "Collaborative Deep Learning for Super-Resolving Blurry Text Images".
 
 ## Environment
 * Python 3.5.4
